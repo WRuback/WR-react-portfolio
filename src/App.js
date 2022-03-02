@@ -9,11 +9,11 @@ function App() {
             <h1>William Ruback</h1>
           </a>
 
-          <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <button className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
 
         <div id="navbarBasicExample" className="navbar-menu">
@@ -22,18 +22,18 @@ function App() {
           </div>
 
           <div className="navbar-end">
-            <a className="navbar-item">
+            <button className="navbar-item">
               Home
-            </a>
-            <a className="navbar-item">
+            </button>
+            <button className="navbar-item">
               Projects
-            </a>
-            <a className="navbar-item">
+            </button>
+            <button className="navbar-item">
               Contact
-            </a>
-            <a className="navbar-item">
+            </button>
+            <button className="navbar-item">
               Resume
-            </a>
+            </button>
           </div>
         </div>
       </nav>
