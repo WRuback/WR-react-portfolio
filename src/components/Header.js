@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function Header({ logo, navClick }) {
+  const [isActive, setisActive] = React.useState(false);
+  
   return (<nav className="navbar is-dark" style={{
     backgroundColor: "purple"
   }} role="navigation" aria-label="main navigation">
@@ -9,14 +11,14 @@ export default function Header({ logo, navClick }) {
         <img src={logo} alt="William Ruback" />
       </a>
 
-      <button className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <button className={`navbar-burger ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" onClick={() => setisActive(!isActive)}data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </button>
     </div>
 
-    <div id="navbarBasicExample" className="navbar-menu">
+    <div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
       <div className="navbar-start">
 
       </div>
