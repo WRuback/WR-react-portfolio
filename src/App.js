@@ -7,9 +7,31 @@ import Homepage from './components/AboutMe';
 import Hero from './components/Hero';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import ContactMe from './components/ContactMe';
 
 function App() {
   let [page, setPage] = useState('About Me');
+
+  let [contactName, setContactName] = useState('');
+  let [email, setEmail] = useState('');
+  let [message, setMessage] = useState('');
+
+  function handleChange(e) {
+    switch (e.target.name) {
+      case "name":
+        setContactName(e.target.value);
+        break;
+      case "email":
+        setEmail(e.target.value);
+        break;
+      case "message":
+        setMessage(e.target.value);
+        break;
+      default:
+        break;
+    }
+
+  };
 
   function navClick(newPage) {
     setPage(newPage);
@@ -28,40 +50,12 @@ function App() {
           <Portfolio />
         </>);
       case 'Contact':
-        return (<section className='section'>
-          <h1 className='title is-1 has-text-centered has-text-warning mx-auto'>Contact Me</h1>
-          <div className='box'>
-            <form>
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Text input" />
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Text input" />
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" type="textarea" placeholder="Your Message" />
-                </div>
-              </div>
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>);
+        return (<ContactMe contactName={contactName} handleChange={handleChange} email={email} message={message} />);
       default:
         return <p>Unknown Page</p>;
     }
   }
+
   return (
     <>
       <Header logo={logo} navClick={navClick} />
@@ -72,6 +66,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 
