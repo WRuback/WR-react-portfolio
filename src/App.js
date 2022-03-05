@@ -3,6 +3,9 @@ import computerImg from './images/Computeredit.png';
 
 import dewi from './images/Dewi.png';
 import heroImg from './images/Hero.png';
+import portfolioIMG from './images/Portfolio.png';
+import contactIMG from './images/Contact.png';
+import resumeIMG from './images/Resume.png';
 
 import React, { useState } from 'react';
 
@@ -17,11 +20,18 @@ import PageTitle from './components/PageTitle';
 
 function App() {
   let [page, setPage] = useState('About Me');
-
+  
+  // These contact states are saved here so they persist on page changes.
   let [contactName, setContactName] = useState('');
   let [email, setEmail] = useState('');
   let [message, setMessage] = useState('');
+  
+  // Sets the page for the user clicking on the header navbar.
+  function navClick(newPage) {
+    setPage(newPage);
+  };
 
+  // Sets the changes on the contact states.
   function handleChange(e) {
     switch (e.target.name) {
       case "name":
@@ -39,34 +49,32 @@ function App() {
 
   };
 
-  function navClick(newPage) {
-    setPage(newPage);
-  };
-
+  // Selects which page to render.
   function renderPage() {
     switch (page) {
       case 'About Me':
         return (<>
-          <Hero computerImg={computerImg} logo={logo} />
+          <Hero computerImg={computerImg} logo={logo} heroImg={heroImg} />
           <AboutMe featureImg={dewi} />
         </>);
       case 'Portfolio':
         return (<>
-          <PageTitle heroImg={heroImg} title={'Portfolio'} subtitle={'Projects Showcasing My Technical Abilities'}/>
+          <PageTitle heroImg={heroImg} titleIMG={portfolioIMG} subtitle={'Projects Showcasing My Technical Abilities'}/>
           <Portfolio />
         </>);
       case 'Contact':
         return (<>
-          <PageTitle heroImg={heroImg} title={'Contact Me'} subtitle={'Currently avaiable for Any Project'}/>
+          <PageTitle heroImg={heroImg} titleIMG={contactIMG} subtitle={'Currently avaiable for Any Project'}/>
           <ContactMe contactName={contactName} handleChange={handleChange} email={email} message={message} />
         </>);
       case 'Resume':
-        return (<Resume heroImg={heroImg} />);
+        return (<Resume heroImg={heroImg} titleIMG={resumeIMG} />);
       default:
         return <p>Unknown Page</p>;
     }
   }
 
+  // The div's on the outside are present to ensure the footer is at the bottom of each viewport.
   return (
     <div style={{ display: 'flex', flexFlow: 'column', minHeight: '100vh' }}>
       <div style={{ flex: "0" }}>
@@ -81,6 +89,3 @@ function App() {
 }
 
 export default App;
-
-
-

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PageTitle({ heroImg, title, subtitle }) {
+export default function PageTitle({ heroImg, titleIMG, subtitle }) {
   return (<section class="hero is-small is-link" style={{
     backgroundImage: "indigo",
     position: "relative",
@@ -11,14 +11,13 @@ export default function PageTitle({ heroImg, title, subtitle }) {
       top: "50%",
       transform: "translateY(-50%)",
       maxWidth: "100%",
-      filter: 'sepia(100%) hue-rotate(230deg) saturate(300%) brightness(50%)'
+      // Adds styling filters to the background image.
+      filter: 'sepia(100%) hue-rotate(230deg) blur(4px) saturate(300%) brightness(50%)'
     }} />
     <div class="hero-body has-text-centered has-text-white" style={{
       zIndex: 1
     }}>
-      <p className="title is-1">
-        {title}
-      </p>
+      <img src={titleIMG} alt="William Ruback" />
       <p className="subtitle is-4">
         {subtitle}
       </p>

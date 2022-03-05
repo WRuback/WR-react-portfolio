@@ -11,7 +11,7 @@ export default function Project({ title, projectImg, description, usedTech = [],
           {title}
         </p>
       </div>
-      <div className='card-image' style={{height: "30%"}}>
+      <div className='card-image'>
         <img src={projectImg} alt="Project Screenshot" />
       </div>
       <div className='card-content'>
@@ -19,6 +19,7 @@ export default function Project({ title, projectImg, description, usedTech = [],
           <p>{description}</p>
           <p>Main Tech Used:</p>
           <ul>
+            {/* Maps all the tech items. */}
             {usedTech.map(item => <li>{item}</li>)}
           </ul>
         </div>

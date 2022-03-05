@@ -1,6 +1,7 @@
 import React from 'react';
+import resumeIMG from '../images/Resume.png';
 
-export default function Resume({ heroImg }) {
+export default function Resume({ heroImg, titleIMG }) {
   return (<>
     <section class="hero is-small is-link" style={{
       backgroundImage: "indigo",
@@ -12,14 +13,12 @@ export default function Resume({ heroImg }) {
         top: "50%",
         transform: "translateY(-50%)",
         maxWidth: "100%",
-        filter: 'sepia(100%) hue-rotate(230deg) saturate(300%) brightness(50%)'
+        filter: 'sepia(100%) hue-rotate(230deg) blur(4px) saturate(300%) brightness(50%)'
       }} />
       <div class="hero-body has-text-centered has-text-white" style={{
         zIndex: 1
       }}>
-        <p className="title is-1">
-          Resume
-        </p>
+        <img src={resumeIMG} alt="William Ruback" />
         <p className="subtitle is-4 has-text-warning is-underlined">
           <a href='https://drive.google.com/file/d/1Cl_1MgX_N5v5Ma80VtvC89GNuSoVQApk/view?usp=sharing' target="_blank" rel="noreferrer noopener">Download Here</a>
         </p>

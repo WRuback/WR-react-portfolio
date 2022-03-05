@@ -1,9 +1,11 @@
 import React from 'react';
 
 export default function Header({ logo, navClick }) {
+  // Tracks wether the burger is open or not.
   const [isActive, setisActive] = React.useState(false);
-  
-  function burger(page){
+
+  // Sets the page navigation and closes the burger.
+  function burger(page) {
     navClick(page);
     setisActive(false);
   }
@@ -11,12 +13,13 @@ export default function Header({ logo, navClick }) {
   return (<nav className="navbar is-dark" style={{
     backgroundColor: "purple"
   }} role="navigation" aria-label="main navigation">
+    
     <div className="navbar-brand">
       <a className="navbar-item" href='#AboutMe' onClick={() => burger('About Me')}>
         <img src={logo} alt="William Ruback" />
       </a>
 
-      <button className={`navbar-burger ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" onClick={() => setisActive(!isActive)}data-target="navbarBasicExample">
+      <button className={`navbar-burger ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" onClick={() => setisActive(!isActive)} data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -24,10 +27,6 @@ export default function Header({ logo, navClick }) {
     </div>
 
     <div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
-      <div className="navbar-start">
-
-      </div>
-
       <div className="navbar-end">
         <a className="navbar-item" href='#AboutMe' onClick={() => burger('About Me')}>
           About Me
@@ -45,4 +44,3 @@ export default function Header({ logo, navClick }) {
     </div>
   </nav>);
 }
-//href='https://drive.google.com/file/d/1Cl_1MgX_N5v5Ma80VtvC89GNuSoVQApk/view?usp=sharing' target="_blank" rel="noreferrer noopener"

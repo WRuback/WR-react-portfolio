@@ -1,9 +1,14 @@
+/* Set the background color for the whole webpage. */
 body{
     background-color: rgb(111, 42, 177);
 }
+
+/* Sets the sections to expand to fill the page on taller viewports. */
 .section {
     flex: 1;
 }
+
+/* Sets the navbar burger menu colors to match the website themes. */
 @media screen and (max-width: 1023px) {
     .navbar-menu {
       background-color: purple !important;
@@ -18,6 +23,8 @@ body{
         color: white;
       }
 }
+
+/* Hides the computer image and centers the text on the Hero components.*/
 @media screen and (max-width: 768px) {
     .hide-on-mobile{
         display: none;
