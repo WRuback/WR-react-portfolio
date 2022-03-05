@@ -64,7 +64,7 @@ function App() {
         </>);
       case 'Contact':
         return (<>
-          <PageTitle heroImg={heroImg} titleIMG={contactIMG} subtitle={'Currently avaiable for Any Project'}/>
+          <PageTitle heroImg={heroImg} titleIMG={contactIMG} subtitle={'Currently Available for Any Project'}/>
           <ContactMe contactName={contactName} handleChange={handleChange} email={email} message={message} />
         </>);
       case 'Resume':
