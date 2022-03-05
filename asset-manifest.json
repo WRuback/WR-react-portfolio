@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/WR-react-portfolio/static/css/main.8416fd9d.css",
-    "main.js": "/WR-react-portfolio/static/js/main.667c4d77.js",
+    "main.css": "/WR-react-portfolio/static/css/main.489b90da.css",
+    "main.js": "/WR-react-portfolio/static/js/main.c9b935f4.js",
     "static/js/787.d6d193af.chunk.js": "/WR-react-portfolio/static/js/787.d6d193af.chunk.js",
     "static/media/Hero.png": "/WR-react-portfolio/static/media/Hero.192be9ff2a9ea76ca360.png",
     "static/media/Computeredit.png": "/WR-react-portfolio/static/media/Computeredit.299f339271454cfe0d42.png",
     "static/media/ProfileIMG.jpg": "/WR-react-portfolio/static/media/ProfileIMG.60597c679759dbf52149.jpg",
-    "static/media/Dewi.png": "/WR-react-portfolio/static/media/Dewi.7c950619cf9a0be0b003.png",
+    "static/media/Wolves.jpg": "/WR-react-portfolio/static/media/Wolves.388e501ef3bb4355ca72.jpg",
+    "static/media/Dewi.png": "/WR-react-portfolio/static/media/Dewi.d19807684ada93b887b8.png",
+    "static/media/Scheduler.png": "/WR-react-portfolio/static/media/Scheduler.6b73d9a6ad836b82a24f.png",
+    "static/media/WeatherDashboard.png": "/WR-react-portfolio/static/media/WeatherDashboard.0c3b7ebac0ac030cdc69.png",
+    "static/media/TechBlog.png": "/WR-react-portfolio/static/media/TechBlog.667fd2cae5ceaf3bec6e.png",
+    "static/media/QuizGame.png": "/WR-react-portfolio/static/media/QuizGame.e3d85be5b656d4e1c8e8.png",
     "index.html": "/WR-react-portfolio/index.html",
-    "main.8416fd9d.css.map": "/WR-react-portfolio/static/css/main.8416fd9d.css.map",
-    "main.667c4d77.js.map": "/WR-react-portfolio/static/js/main.667c4d77.js.map",
+    "main.489b90da.css.map": "/WR-react-portfolio/static/css/main.489b90da.css.map",
+    "main.c9b935f4.js.map": "/WR-react-portfolio/static/js/main.c9b935f4.js.map",
     "787.d6d193af.chunk.js.map": "/WR-react-portfolio/static/js/787.d6d193af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8416fd9d.css",
-    "static/js/main.667c4d77.js"
+    "static/css/main.489b90da.css",
+    "static/js/main.c9b935f4.js"
   ]
 }
