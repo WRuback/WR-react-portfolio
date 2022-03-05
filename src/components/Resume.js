@@ -1,5 +1,4 @@
 import React from 'react';
-import resumeIMG from '../images/Resume.png';
 
 export default function Resume({ heroImg, titleIMG }) {
   return (<>
@@ -18,7 +17,7 @@ export default function Resume({ heroImg, titleIMG }) {
       <div class="hero-body has-text-centered has-text-white" style={{
         zIndex: 1
       }}>
-        <img src={resumeIMG} alt="William Ruback" />
+        <img src={titleIMG} alt="William Ruback" />
         <p className="subtitle is-4 has-text-warning is-underlined">
           <a href='https://drive.google.com/file/d/1Cl_1MgX_N5v5Ma80VtvC89GNuSoVQApk/view?usp=sharing' target="_blank" rel="noreferrer noopener">Download Here</a>
         </p>
