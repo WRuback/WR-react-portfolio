@@ -44,7 +44,7 @@ export default function ContactMe({ contactName, handleChange, email, message })
   }
 
   return (<section className='section'>
-    <div className='box has-background-warning'>
+    <div className='box' style={{backgroundColor: 'rgb(255, 247, 207)'}}>
       <form onSubmit={handleSubmit}>
         <div className="field">
           <label className="label">Name</label>
