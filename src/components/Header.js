@@ -32,8 +32,8 @@ export default function Header({ logo, navClick }) {
         <a className="navbar-item" href='#AboutMe' onClick={() => burger('About Me')}>
           About Me
         </a>
-        <a className="navbar-item" href='#Projects' onClick={() => burger('Projects')}>
-          Projects
+        <a className="navbar-item" href='#Projects' onClick={() => burger('Portfolio')}>
+          Portfolio
         </a>
         <a className="navbar-item" href='#Contact' onClick={() => burger('Contact')}>
           Contact

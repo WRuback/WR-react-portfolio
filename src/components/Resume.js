@@ -12,7 +12,7 @@ export default function Resume({ heroImg }) {
         top: "50%",
         transform: "translateY(-50%)",
         maxWidth: "100%",
-        filter: 'sepia(100%) hue-rotate(230deg) brightness(70%)'
+        filter: 'sepia(100%) hue-rotate(230deg) saturate(300%) brightness(50%)'
       }} />
       <div class="hero-body has-text-centered has-text-white" style={{
         zIndex: 1
@@ -20,7 +20,7 @@ export default function Resume({ heroImg }) {
         <p className="title is-1">
           Resume
         </p>
-        <p className="subtitle is-4">
+        <p className="subtitle is-4 has-text-warning is-underlined">
           <a href='https://drive.google.com/file/d/1Cl_1MgX_N5v5Ma80VtvC89GNuSoVQApk/view?usp=sharing' target="_blank" rel="noreferrer noopener">Download Here</a>
         </p>
       </div>

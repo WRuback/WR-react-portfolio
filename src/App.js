@@ -13,6 +13,7 @@ import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import ContactMe from './components/ContactMe';
 import Resume from './components/Resume';
+import PageTitle from './components/PageTitle';
 
 function App() {
   let [page, setPage] = useState('About Me');
@@ -49,15 +50,18 @@ function App() {
           <Hero computerImg={computerImg} logo={logo} />
           <AboutMe featureImg={dewi} />
         </>);
-      case 'Projects':
+      case 'Portfolio':
         return (<>
-          <Hero computerImg={computerImg} logo={logo} />
+          <PageTitle heroImg={heroImg} title={'Portfolio'} subtitle={'Projects Showcasing My Technical Abilities'}/>
           <Portfolio />
         </>);
       case 'Contact':
-        return (<ContactMe contactName={contactName} handleChange={handleChange} email={email} message={message} />);
+        return (<>
+          <PageTitle heroImg={heroImg} title={'Contact Me'} subtitle={'Currently avaiable for Any Project'}/>
+          <ContactMe contactName={contactName} handleChange={handleChange} email={email} message={message} />
+        </>);
       case 'Resume':
-        return (<Resume   heroImg={heroImg}  />);
+        return (<Resume heroImg={heroImg} />);
       default:
         return <p>Unknown Page</p>;
     }
@@ -66,15 +70,17 @@ function App() {
   return (
     <div style={{ display: 'flex', flexFlow: 'column', minHeight: '100vh' }}>
       <div style={{ flex: "0" }}>
-      <Header logo={logo} navClick={navClick} />
+        <Header logo={logo} navClick={navClick} />
       </div>
-        {renderPage()}
+      {renderPage()}
       <div style={{ flex: "0" }}>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
 }
 
 export default App;
+
+
 

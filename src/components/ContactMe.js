@@ -44,7 +44,6 @@ export default function ContactMe({ contactName, handleChange, email, message })
   }
 
   return (<section className='section'>
-    <h1 className='title is-1 has-text-centered has-text-warning mx-auto'>Contact Me</h1>
     <div className='box'>
       <form onSubmit={handleSubmit}>
         <div className="field">
