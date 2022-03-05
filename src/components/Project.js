@@ -12,7 +12,7 @@ export default function Project({ title, projectImg, description, usedTech = [],
         </p>
       </div>
       <div className='card-image' style={{height: "30%"}}>
-        <img src={projectImg} alt="William Ruback" />
+        <img src={projectImg} alt="Project Screenshot" />
       </div>
       <div className='card-content'>
         <div className="content">

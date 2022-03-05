@@ -44,7 +44,7 @@ export default function ContactMe({ contactName, handleChange, email, message })
   }
 
   return (<section className='section'>
-    <div className='box'>
+    <div className='box has-background-warning'>
       <form onSubmit={handleSubmit}>
         <div className="field">
           <label className="label">Name</label>
@@ -67,7 +67,7 @@ export default function ContactMe({ contactName, handleChange, email, message })
         <div className="field">
           <label className="label">{errorDisplay}</label>
           <div className="control">
-            <button className="button is-link" disabled={contactName && email && email.match(/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/) && message ? "" : "true"}>Submit</button>
+            <button className="button has-text-white" style={{backgroundColor: 'purple'}}disabled={contactName && email && email.match(/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/) && message ? "" : "true"}>Submit</button>
           </div>
         </div>
       </form>
