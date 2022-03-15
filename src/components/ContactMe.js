@@ -101,5 +101,8 @@ export default function ContactMe({ contactName, handleChange, email, message })
         </div>
       </form>
     </div>
+    <div className='box' style={{ backgroundColor: 'rgb(255, 247, 207)' }}>
+      <h3 className='title is-4 has-text-centered'>Or email me at <a href="mailto: wrubackdev@gmail.com">wrubackdev@gmail.com</a>.</h3>
+    </div>
   </section>);
 }
