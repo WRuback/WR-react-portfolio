@@ -1,4 +1,4 @@
-import dewi from '../images/Dewi.png';
+import fireChair from '../images/FireChair.jpg';
 import wolves from '../images/Wolves.jpg';
 import techBlog from '../images/TechBlog.png';
 import scheduler from '../images/Scheduler.png';
@@ -11,12 +11,12 @@ export default function Portfolio() {
   return (<section className='section'>
     <div className='columns is-multiline is-centered'>
       <div className='column is-half is-one-third-desktop'>
-      <Project title="Dewi"
-          projectImg={dewi} 
-          description="A web application that let's you search a wide varity of books with a series of tags. You can then create a user account and save your favorite books your shelf!"
-          usedTech={["MySQL", "Express", "Handlebars"]}
-          appLink="https://dewi-library.herokuapp.com/" 
-          githubLink="https://github.com/EzequielMejiasMelo/dewi" />
+      <Project title="Fire Chair"
+          projectImg={fireChair} 
+          description="A Jackbox-style web game that let's you host a lobby, invite your friends with the room code, and roast them in a fun party game! Based on the game Hotseat."
+          usedTech={["Socket.io", "React.js", "MongoDB"]}
+          appLink="https://polw-fire-chair.herokuapp.com/" 
+          githubLink="https://github.com/WRuback/fire-chair" />
       </div>
       <div className='column is-half is-one-third-desktop'>
       <Project title="Wolves A La Carte"

@@ -1,7 +1,7 @@
 import logo from './images/Logo.png';
 import computerImg from './images/Computeredit.png';
 
-import dewi from './images/Dewi.png';
+import fireChair from './images/FireChair.jpg';
 import heroImg from './images/Hero.png';
 import portfolioIMG from './images/Portfolio.png';
 import contactIMG from './images/Contact.png';
@@ -55,7 +55,7 @@ function App() {
       case 'About Me':
         return (<>
           <Hero computerImg={computerImg} logo={logo} heroImg={heroImg} />
-          <AboutMe featureImg={dewi} />
+          <AboutMe featureImg={fireChair} />
         </>);
       case 'Portfolio':
         return (<>
