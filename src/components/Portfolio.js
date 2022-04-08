@@ -47,8 +47,8 @@ export default function Portfolio() {
           projectImg={weather} 
           description="A simple dashboard that lets you see the current weather and a 5 day forecast of any city."
           usedTech={["Open Weather API", "CSS", "Javascript"]}
-          appLink="https://dewi-library.herokuapp.com/" 
-          githubLink="https://github.com/EzequielMejiasMelo/dewi" />
+          appLink="https://wruback.github.io/WR-weather-dashboard/" 
+          githubLink="https://github.com/WRuback/WR-weather-dashboard" />
       </div>
       <div className='column is-half is-one-third-desktop'>
       <Project title="Quiz Game"
