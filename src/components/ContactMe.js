@@ -47,62 +47,8 @@ export default function ContactMe({ contactName, handleChange, email, message })
   }
 
   return (<section className='section'>
-    <div className='box' style={{ backgroundColor: 'rgb(255, 247, 207)' }}>
-      <form onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label">Name</label>
-          <div className="control">
-            <input className="input"
-              type="text"
-              placeholder="Text input"
-              name='name'
-              value={contactName}
-              onChange={handleChange}
-              onBlur={checkInputStatus} />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label">Email</label>
-          <div className="control">
-            <input className="input"
-              type="text"
-              placeholder="Text input"
-              name='email'
-              value={email}
-              onChange={handleChange}
-              onBlur={checkInputStatus} />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label">Message</label>
-          <div className="control">
-            <textarea className="textarea"
-              type="textarea"
-              placeholder="Your Message"
-              name='message' value={message}
-              onChange={handleChange}
-              onBlur={checkInputStatus} />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label">{errorDisplay}</label>
-          <div className="control">
-            <button
-              className="button has-text-white"
-              style={{ backgroundColor: 'purple' }}
-              // Stays disabled unless everything is filled out with proper format.
-              disabled={contactName &&
-                email &&
-                email.match(/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/) &&
-                message ? "" : "true"}>
-              Submit
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div className='box' style={{ backgroundColor: 'rgb(255, 247, 207)' }}>
-      <h3 className='title is-4 has-text-centered'>Or email me at <a href="mailto: wrubackdev@gmail.com">wrubackdev@gmail.com</a>.</h3>
+    <div className='box' style={{ backgroundColor: "purple" }}>
+      <h3 className='title is-4 has-text-white has-text-centered'>Email me at <a style={{ color: "Fuchsia" }} href="mailto: wrubackdev@gmail.com">wrubackdev@gmail.com</a>, or call  at <a style={{ color: "Fuchsia" }} href="tel:5618771580">{"(561)-877-1580"}</a>.</h3>
     </div>
   </section>);
 }

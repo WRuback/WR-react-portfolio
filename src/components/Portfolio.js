@@ -15,7 +15,7 @@ export default function Portfolio() {
           projectImg={fireChair} 
           description="A Jackbox-style web game that let's you host a lobby, invite your friends with the room code, and roast them in a fun party game! Based on the game Hotseat."
           usedTech={["Socket.io", "React.js", "MongoDB"]}
-          appLink="https://polw-fire-chair.herokuapp.com/" 
+          appLink="https://github.com/WRuback/fire-chair" 
           githubLink="https://github.com/WRuback/fire-chair" />
       </div>
       <div className='column is-half is-one-third-desktop'>
